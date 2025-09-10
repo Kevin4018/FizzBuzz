@@ -2,19 +2,16 @@ package lab1;
 
 public class Multiples {
     public static void main(String[] args) {
-        extracted();
+        System.out.println(multiples(1000, 3, 5));
     }
 
-    private static void extracted() {
-        int i = 1;
-        while(i < 1000){
-            if (i % 3 == 0){
-                System.out.println(i);
+    public static int multiples(int n, int a, int b) {
+        int count = 0;
+        for (int i = 1; i < n; i++) {
+            if (i % a == 0 || i % b == 0) {
+                count++;
             }
-            else if(i % 5 == 0){
-                System.out.println(i);
-            }
-            i++;
         }
+        return count;
     }
 }
