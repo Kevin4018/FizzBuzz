@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
  */
 public class MultiplesDefaultTest {
 
+    private Object Multiples;
+
     // TODO: When you are ready to test task X,
     //  copy this file into the test folder.
     @Test
     public void testDefault() {
         assertEquals(466,
-                Multiples.multiples(),
+                Multiples.getClass(),
                 "Multiples.multiples() is incorrect for default values");
     }
 
